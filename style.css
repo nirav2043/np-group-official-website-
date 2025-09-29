@@ -1,0 +1,90 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #FFD700;
+  text-align: center;
+}
+
+/* Header */
+header {
+  padding: 20px;
+  background: linear-gradient(90deg, #000, #222);
+  animation: fadeIn 2s ease-in-out;
+}
+header .logo {
+  width: 100px;
+  animation: bounce 2s infinite;
+}
+header .title {
+  font-size: 2rem;
+  margin: 10px 0;
+  animation: glow 2s infinite alternate;
+}
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #FFD700;
+  font-weight: bold;
+  transition: 0.3s;
+}
+header nav a:hover {
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  padding: 40px 20px;
+  animation: fadeUp 2s ease-in-out;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+}
+h2 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #FFD700;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.card {
+  background: #111;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 0 10px #FFD700;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #fff700;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes glow {
+  from { text-shadow: 0 0 10px #FFD700; }
+  to { text-shadow: 0 0 25px #fff700, 0 0 40px #FFD700; }
+}
